@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pokémon Marcket — Premium Pokémon Cards</title>
+  <meta name="description" content="Pokémon Marcket — curated Pokémon cards for collectors. Pay by card or Cash App." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Pokémon Marcket</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#products">Cards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h2>Rare. Graded. Ready to ship.</h2>
+          <p class="lead">Curated Pokémon cards for collectors & players — pay by card (placeholder) or Cash App.</p>
+          <a class="btn-primary" href="#products">Shop cards</a>
+        </div>
+        <img src="https://picsum.photos/seed/poke-hero/540/360" alt="Pokémon cards laid out" class="hero-img">
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About Pokémon Marcket</h3>
+      <p>We source high-quality Pokémon cards — singles, graded cards, and sealed packs. Every item is inspected and described accurately. Fast shipping and responsive support.</p>
+      <ul class="about-list">
+        <li>Authenticity checked</li>
+        <li>Secure shipping & tracking</li>
+        <li>Prompt customer support</li>
+      </ul>
+    </section>
+
+    <section id="products" class="container products">
+      <div class="section-header">
+        <h3>Cards for sale</h3>
+        <p class="muted">Click a product to pay. Card payments currently link to a placeholder checkout (replace with your Stripe/checkout URL).</p>
+      </div>
+
+      <div class="grid">
+        <!-- Product 1 -->
+        <article class="card" data-item="Charizard Holo — Shadowless" data-price="1499.00">
+          <img src="https://picsum.photos/seed/card1/600/380" alt="Card placeholder">
+          <div class="card-body">
+            <h4>Charizard Holo — Shadowless</h4>
+            <p class="price">$1,499.00</p>
+            <p class="meta">Near mint — graded option available</p>
+            <div class="actions">
+              <a class="btn btn-card" href="#" data-checkout-url="https://example.com/checkout-placeholder">Buy with card</a>
+              <button class="btn btn-cash" data-item="Charizard Holo — Shadowless" data-price="1499.00">Pay Cash App</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="card" data-item="Pikachu Illustrator (Repro)" data-price="6999.00">
+          <img src="https://picsum.photos/seed/card2/600/380" alt="Card placeholder">
+          <div class="card-body">
+            <h4>Pikachu Illustrator (Repro)</h4>
+            <p class="price">$6,999.00</p>
+            <p class="meta">Demo listing (placeholder image)</p>
+            <div class="actions">
+              <a class="btn btn-card" href="#" data-checkout-url="https://example.com/checkout-placeholder">Buy with card</a>
+              <button class="btn btn-cash" data-item="Pikachu Illustrator (Repro)" data-price="6999.00">Pay Cash App</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="card" data-item="Blastoise 1st Ed Holo" data-price="849.00">
+          <img src="https://picsum.photos/seed/card3/600/380" alt="Card placeholder">
+          <div class="card-body">
+            <h4>Blastoise 1st Ed Holo</h4>
+            <p class="price">$849.00</p>
+            <p class="meta">Excellent condition</p>
+            <div class="actions">
+              <a class="btn btn-card" href="#" data-checkout-url="https://example.com/checkout-placeholder">Buy with card</a>
+              <button class="btn btn-cash" data-item="Blastoise 1st Ed Holo" data-price="849.00">Pay Cash App</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="card" data-item="Vintage Booster Pack (Sealed)" data-price="299.00">
+          <img src="https://picsum.photos/seed/card4/600/380" alt="Card placeholder">
+          <div class="card-body">
+            <h4>Vintage Booster Pack (Sealed)</h4>
+            <p class="price">$299.00</p>
+            <p class="meta">Unopened booster — random pack</p>
+            <div class="actions">
+              <a class="btn btn-card" href="#" data-checkout-url="https://example.com/checkout-placeholder">Buy with card</a>
+              <button class="btn btn-cash" data-item="Vintage Booster Pack (Sealed)" data-price="299.00">Pay Cash App</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact & Cash App</h3>
+      <div class="contact-grid">
+        <div>
+          <strong>Email</strong>
+          <p><a href="mailto:hello@pokepros.example">hello@pokepros.example</a> (replace with your real email)</p>
+        </div>
+        <div>
+          <strong>Cash App</strong>
+          <p><code>$MYKAKLawrence6</code> — send exact amount and include the item name in the note.</p>
+        </div>
+        <div>
+          <strong>Instagram</strong>
+          <p><a href="#" aria-disabled="true">Coming soon</a></p>
+        </div>
+      </div>
+
+      <div class="cash-qr" id="cash-qr" hidden>
+        <h4>Cash App instructions</h4>
+        <p>Send the exact amount to <strong>$MYKAKLawrence6</strong> and include the item name in the note. After sending, email a screenshot of your receipt to <a href="mailto:hello@pokepros.example">hello@pokepros.example</a> with the item name so we can confirm and ship.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Pokémon Marcket — All rights reserved.</p>
+    </div>
+  </footer>
+
+<script>
+  // year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Card buttons: currently open placeholder checkout link.
+  document.querySelectorAll('.btn-card').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const card = btn.closest('.card');
+      const item = card.dataset.item;
+      const price = card.dataset.price;
+      // Placeholder flow: open checkout URL (replace data-checkout-url with real checkout link)
+      const url = btn.dataset.checkoutUrl || '#';
+      const ok = confirm(`Proceed to card checkout for:\n\n${item}\n$${price}\n\nThis opens a placeholder checkout link. Replace with your real checkout URL when ready.`);
+      if (!ok) return;
+      // In real use: redirect to server-created Stripe Checkout session URL
+      if (url === '#' || url.includes('example.com')) {
+        alert('This is a placeholder checkout link. Replace the element\'s data-checkout-url with your real checkout URL or wire it to your server to create a Stripe Checkout session.');
+      } else {
+        window.location = url;
+      }
+    });
+  });
+
+  // Cash App buttons: show instructions dialog + reveal cash-qr area
+  document.querySelectorAll('.btn-cash').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.getAttribute('data-item');
+      const price = btn.getAttribute('data-price');
+      const lines = [
+        `Pay via Cash App`,
+        `1) Send $${Number(price).toFixed(2)} to $MYKAKLawrence6`,
+        `2) In the Cash App note include: "${item}"`,
+        `3) Email your Cash App receipt screenshot to hello@pokepros.example with the item name to confirm.`,
+        ``,
+        `After we confirm payment we'll ship your item.`
+      ];
+      alert(lines.join('\n'));
+      // reveal the on-page Cash instructions as well
+      const qr = document.getElementById('cash-qr');
+      qr.hidden = false;
+      qr.scrollIntoView({behavior:'smooth', block:'center'});
+    });
+  });
+</script>
+</body>
+</html>:root{
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#0b74de;
+  --accent-2:#024fa6;
+  --radius:12px;
+  --container:1100px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:#0f1724;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);font-size:16px;line-height:1.45;color:var(--text,#0f1724)}
+
+.container{max-width:var(--container);margin:0 auto;padding:28px}
+
+.site-header{background:transparent;padding:18px 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;font-size:20px;color:var(--accent-2);margin:0}
+nav a{margin-left:16px;color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--accent)}
+
+.hero{background:linear-gradient(135deg,#fff 0%, #f1f6ff 100%);padding:48px 0;border-bottom:1px solid rgba(15,23,36,0.04)}
+.hero-inner{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center}
+.hero h2{font-size:32px;margin:0 0 8px}
+.lead{color:var(--muted);margin:0 0 16px}
+
+.btn-primary{display:inline-block;background:var(--accent);color:white;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+.btn{display:inline-block;background:transparent;border:1px solid rgba(15,23,36,0.08);padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--accent-2);font-weight:600;cursor:pointer}
+
+.hero-img{width:100%;border-radius:12px;max-width:540px;object-fit:cover;box-shadow:0 8px 20px rgba(2,79,166,0.08)}
+
+.about{padding:36px 0}
+.section-header{display:flex;justify-content:space-between;align-items:center}
+.section-header p{color:var(--muted);margin:0}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:18px}
+.card{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(2,6,23,0.06);display:flex;flex-direction:column}
+.card img{width:100%;height:200px;object-fit:cover}
+.card-body{padding:12px 14px}
+.card-body h4{margin:0 0 6px;font-size:16px}
+.price{font-weight:700;color:var(--accent-2);margin:6px 0}
+.meta{color:var(--muted);font-size:13px;margin-bottom:10px}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:12px}
+.cash-qr{background:var(--card);padding:14px;border-radius:10px;margin-top:12px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+
+.site-footer{padding:22px 0;border-top:1px solid rgba(15,23,36,0.04);background:transparent}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+
+@media (max-width:900px){
+  .hero-inner{grid-template-columns:1fr}
+  nav a{display:none}
+}
